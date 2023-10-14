@@ -1,40 +1,41 @@
-import email from '../assets/email.png';
-import mobile from '../assets/mobile.png';
-import api from '../assets/api.png';
-import cpp from '../assets/cpp.png';
-import css from '../assets/css.png';
-import figma from '../assets/figma.png';
-import flutter from '../assets/flutter.png';
-import git from '../assets/git.png';
-import graphql from '../assets/graphql.png';
-import html from '../assets/html.png';
-import javascript from '../assets/javascript.png';
-import mu5 from '../assets/mu5.png';
-import node from '../assets/node.png';
-import python from '../assets/python.png';
-import react from '../assets/react.png';
-import redux from '../assets/redux.png';
-import sass from '../assets/sass.png';
-import typescript from '../assets/typescript.png';
-import vue from '../assets/vue.png';
+import email from '../Assets/email.png';
+import mobile from '../Assets/mobile.png';
+import api from '../Assets/api.png';
+import cpp from '../Assets/cpp.png';
+import css from '../Assets/css.png';
+import figma from '../Assets/figma.png';
+import flutter from '../Assets/flutter.png';
+import git from '../Assets/git.png';
+import graphql from '../Assets/graphql.png';
+import html from '../Assets/html.png';
+import javascript from '../Assets/javascript.png';
+import mu5 from '../Assets/mu5.png';
+import node from '../Assets/node.png';
+import python from '../Assets/python.png';
+import react from '../Assets/react.png';
+import redux from '../Assets/redux.png';
+import sass from '../Assets/sass.png';
+import typescript from '../Assets/typescript.png';
+import vue from '../Assets/vue.png';
 
-import about01 from '../assets/about01.png';
-import about02 from '../assets/about02.png';
-import about03 from '../assets/about03.png';
-import about04 from '../assets/about04.png';
+import about01 from '../Assets/about01.png';
+import about02 from '../Assets/about02.png';
+import about03 from '../Assets/about03.png';
+import about04 from '../Assets/about04.png';
 
-import profile from '../assets/profile.png';
-import circle from '../assets/circle.svg';
-import logo from '../assets/logo.png';
+import profile from '../Assets/profile.png';
+import circle from '../Assets/circle.svg';
+import logo from '../Assets/logo.png';
 
-import adidas from '../assets/adidas.png';
-import amazon from '../assets/amazon.png';
-import asus from '../assets/asus.png';
-import bolt from '../assets/bolt.png';
-import nb from '../assets/nb.png';
-import skype from '../assets/skype.png';
-import spotify from '../assets/spotify.png';
-import nomLogo from '../Assets/nomLogo.png'
+import adidas from '../Assets/adidas.png';
+import amazon from '../Assets/amazon.png';
+import asus from '../Assets/asus.png';
+import bolt from '../Assets/bolt.png';
+import nb from '../Assets/nb.png';
+import skype from '../Assets/skype.png';
+import spotify from '../Assets/spotify.png';
+import nomLogo from '../Assets/nomLogo.png';
+import nomLogo2 from '../Assets/nomLogo2.png';
 
 export default {
   email,
@@ -71,4 +72,5 @@ export default {
   skype,
   spotify,
   nomLogo,
+  nomLogo2,
 };

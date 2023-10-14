@@ -1,2 +1,2 @@
-import {images} from './images'
-export {images} 
+import images from './images'
+export {images}
