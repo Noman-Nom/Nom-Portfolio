@@ -4,7 +4,15 @@ import { About,Footer,Work,Testimonials,Skills,Header } from './Container'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className='app'>
+
+      <Header/>
+      <About/>
+      <Work/>
+      <Skills/>
+      <Testimonials/>
+      <Footer/>
+    </div>
   )
 }
 

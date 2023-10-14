@@ -1,13 +1,9 @@
 import React from 'react'
 
-import './Testimonials.scss'
-
 const Testimonials = () => {
-  return 
-  (
+  return (
     <div>Testimonials</div>
   )
 }
-
 
 export default Testimonials
