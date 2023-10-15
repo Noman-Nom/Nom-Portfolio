@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="app__navbar-menu">
         <BsFillMenuButtonWideFill className="icon" onClick={() => setToggle(true)} />
         {toggle && (
-          <motion.div
+          <motion.div className="motion-div"
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.85, ease: "easeOut" }}
           >
