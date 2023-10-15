@@ -38,6 +38,7 @@ const Navbar = () => {
             {["Home", "About", "Work", "Skills", "Contacts"].map((item) => (
           <li  key={item}>
             <a href={`#${item}`} onClick={() => setToggle(false)} >{item}</a>
+            <div />
           
           </li>
         ))}
