@@ -47,7 +47,7 @@
                 color: var(--gray-color);
                 text-decoration: none;
                 flex-direction: column;
-                font-weight: 500;
+                font-weight: bold;
                 text-transform: uppercase;
                 transition: all .3s ease-in-out;
 
@@ -55,8 +55,21 @@
                     color: var(--secondary-color);
                 }
             }
+            div{
+                
+               width: 0;
+               height: 3px;
+               background-color: transparent;
+               margin-bottom: 5px;
+               transition: all .3s ease-in-out;
+            }
+            &:hover{
+                div{
+                    width: 100%;
+                    background-color:var(--myfvt-color);
+                }
+            }
 
-       
         }
     }
 }
