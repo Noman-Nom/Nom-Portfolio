@@ -25,7 +25,7 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="app__navbar-menu">
-        <BsFillMenuButtonWideFill onClick={() => setToggle(true)} />
+        <BsFillMenuButtonWideFill className="icon" onClick={() => setToggle(true)} />
         {toggle && (
           <motion.div
             whileInView={{ x: [300, 0] }}
