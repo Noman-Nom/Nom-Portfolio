@@ -20,10 +20,12 @@ const Navbar = () => {
         {["Home", "About", "Work", "Skills", "Contacts"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <a href={`#${item}`}>{item}</a>
-            <div />
+           
           </li>
         ))}
       </ul>
+
+
       <div className="app__navbar-menu">
         <BsFillMenuButtonWideFill className="icon" onClick={() => setToggle(true)} />
         {toggle && (
