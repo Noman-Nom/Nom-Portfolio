@@ -1,9 +1,16 @@
 import React from 'react'
+import { useState } from 'react'
+
+import {BsFillMenuButtonWideFill} from 'react-icons/bs'
+import {motion} from 'framer-motion'
 
 import { images } from '../../Constants'
+
 import './Navbar.scss'
 
 const Navbar = () => {
+
+  const [toggle, setToggle] = useState(false)
   return (
     
    <nav className='app__navbar'>
@@ -21,6 +28,21 @@ const Navbar = () => {
         ))
       }
     </ul>
+    <div className="app__navbar-menu">
+      <BsFillMenuButtonWideFill onClick={()=>setToggle(true)}/>
+      {
+        toggle && ( 
+          <motion.div
+          
+          >
+
+
+          </motion.div>
+
+        )
+      }
+
+    </div>
    </nav>
 
   
