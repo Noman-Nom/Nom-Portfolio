@@ -36,6 +36,7 @@ import skype from '../Assets/skype.png';
 import spotify from '../Assets/spotify.png';
 import nomLogo from '../Assets/nomLogo.png';
 import nomLogo2 from '../Assets/nomLogo2.png';
+import whitebg from '../Assets/whitebg.jpg';
 
 export default {
   email,
@@ -73,4 +74,5 @@ export default {
   spotify,
   nomLogo,
   nomLogo2,
+  whitebg,
 };
