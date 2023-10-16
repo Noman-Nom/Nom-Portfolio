@@ -173,7 +173,35 @@
             margin-left: 0;
 
         }
+            div{
+                margin: 1rem;
+            }
 
+    }
+}
 
+.app__header-img{
+    flex: 1;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+
+    img{
+        width: 80%;
+        object-fit: contain;
+        z-index: 1;
+
+    }
+
+    .overlay_circle{
+        position: absolute;
+        left: 10%;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
     }
 }
