@@ -37,6 +37,8 @@ import spotify from '../Assets/spotify.png';
 import nomLogo from '../Assets/nomLogo.png';
 import nomLogo2 from '../Assets/nomLogo2.png';
 import whitebg from '../Assets/whitebg.jpg';
+import circle1 from '../Assets/circle1.png';
+
 
 export default {
   email,
@@ -75,4 +77,6 @@ export default {
   nomLogo,
   nomLogo2,
   whitebg,
+  circle1,
+  
 };
