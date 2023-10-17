@@ -38,6 +38,10 @@ import nomLogo from '../Assets/nomLogo.png';
 import nomLogo2 from '../Assets/nomLogo2.png';
 import whitebg from '../Assets/whitebg.jpg';
 import circle1 from '../Assets/circle1.png';
+import reacticon from '../Assets/reacticon.png';
+import jslogo from '../Assets/jslogo.png';
+import tailwindcss from '../Assets/tailwindcss.png';
+import nextjs from '../Assets/nextjs.png';
 
 
 export default {
@@ -78,5 +82,8 @@ export default {
   nomLogo2,
   whitebg,
   circle1,
-  
+  reacticon,
+  jslogo,
+  tailwindcss,
+  nextjs,
 };
