@@ -19,7 +19,7 @@ const abouts = [
   {
     title: "Back-End Development",
     description: "Reliability, Scalability, Security: Our Back-End Promise",
-    imgUrl: images.about08,
+    imgUrl: images.about03,
   },
   {
     title: "DataBase",
@@ -33,7 +33,7 @@ const About = () => {
     <>
       <h2 className="head-text">
         {" "}
-        "Where <span>Good Design</span>
+        "Where Good  <span>Development</span>
         <br />
         Meets Great <span>Business Outcomes</span>"
       </h2>
