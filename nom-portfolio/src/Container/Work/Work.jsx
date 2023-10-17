@@ -12,6 +12,19 @@ const Work = () => {
   const [activeFilter, setActiveFilter] = useState('All')
 
   const [animateCard, setAnimateCard] = useState({y:0, opacity:1})
+  const [work, setWork] = useState([])
+  const [filterWork, setFilterWork] = useState([])
+
+  useEffect(()=>{
+    const query = '*[_type == "works"]';
+
+    Client.fetch(query)
+    .then((data) => {
+      setWork(data)
+      setFilterWork(data)
+    })
+    .catch((error) => console.error("Error fetching data from Sanity:", error));
+  },[])
   const handleWorkFilter =(item)=>{
 
   }
