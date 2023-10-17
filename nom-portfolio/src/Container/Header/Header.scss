@@ -74,11 +74,11 @@
         .badge-cmp,
         .tag-cmp {
             padding: 1rem 2rem;
-          
+
             border-radius: 15px;
             flex-direction: row;
             width: auto;
-            box-shadow: rgba(14 ,190, 233,0.8) 0px 3px 6px, rgb(93, 135, 255,0.8)  0px 3px 6px;
+            box-shadow: rgba(14, 190, 233, 0.8) 0px 3px 6px, rgb(93, 135, 255, 0.8) 0px 3px 6px;
 
             span {
                 font-size: 2.6rem;
@@ -111,13 +111,13 @@
 
         }
 
-         .badge-cmp{
-            .p-extra{
+        .badge-cmp {
+            .p-extra {
                 color: rgb(14 165 233);
                 font-weight: bold;
 
             }
-         }
+        }
 
     }
 
@@ -131,43 +131,58 @@
         align-items: flex-start;
         height: 100%;
         margin-left: 1rem;
-        margin-top: 6rem;
+        margin-top: 3rem;
 
         div {
             width: 100px;
             height: 100px;
             border-radius: 50%;
             background: var(--white-color);
-            box-shadow: rgba(14 ,190, 233,0.8) 0px 3px 6px, rgb(93, 135, 255,0.8)  0px 3px 6px;
+            box-shadow: rgba(14, 190, 233, 0.8) 0px 3px 6px, rgb(93, 135, 255, 0.8) 0px 3px 6px;
             cursor: pointer;
 
             img {
                 width: 60%;
                 height: 60%;
+               
             }
         }
 
         div:nth-child(1) {
             width: 60px;
+            margin-left: -5rem;
+          
+
             height: 60px;
         }
 
         div:nth-child(2) {
-            margin: 1.75rem;
+            margin-left: -2rem;
+            margin-top: 1rem;
             width: 90px;
             height: 90px;
         }
 
         div:nth-child(3) {
-            width: 60px;
-            height: 60px;
-            margin-left: 3rem;
+            width: 70px;
+            height: 70px;
+            margin-top: 1rem;
+            margin-left: 1rem;
+
         }
+
         div:nth-child(4) {
             width: 70px;
             height: 70px;
-           margin-top: 2rem;
-           margin-left: 2rem;
+            margin-top: 2rem;
+            margin-left: 2rem;
+        }
+
+        div:nth-child(5) {
+            width: 90px;
+            height: 90px;
+            margin-top: 2rem;
+            margin-left: 1rem;
         }
 
         @media screen and (min-width:2000px) {
@@ -175,51 +190,61 @@
                 width: 200px;
                 height: 200px;
             }
-    
+
             div:nth-child(2) {
                 margin: 1.75rem;
                 width: 250px;
                 height: 250px;
             }
-    
+
             div:nth-child(3) {
                 width: 200px;
                 height: 200px;
                 margin-left: 3rem;
             }
+
             div:nth-child(4) {
                 width: 220px;
                 height: 220px;
-               margin-top: 2rem;
-               margin-left: 2rem;
+                margin-top: 2rem;
+                margin-left: 2rem;
             }
         }
+
         @media screen and (max-width:1200px) {
-            
+
             width: 100%;
+            display: flex;
             flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem;
+
             flex-wrap: wrap;
-            margin-left: 0;
+
             margin-top: 0;
-
-
-           
-        }
-        
-            div{
-              margin: 0;
-              margin-top: 0;
-              margin-left: 0;
-
-              
-
-
+            .circle-cmp {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background: var(--white-color);
+                box-shadow: rgba(14, 190, 233, 0.8) 0px 3px 6px, rgb(93, 135, 255, 0.8) 0px 3px 6px;
+                cursor: pointer;
+    
+                img {
+                    width: 60%;
+                    height: 60%;
+                }
             }
+
+        }
+
+
 
     }
 }
 
-.app__header-img{
+.app__header-img {
     flex: 1;
     height: 100%;
 
@@ -228,14 +253,14 @@
     align-items: flex-end;
     position: relative;
 
-    img{
+    img {
         width: 80%;
         object-fit: contain;
         z-index: 1;
 
     }
 
-    .overlay_circle{
+    .overlay_circle {
         position: absolute;
         left: 15%;
         right: 0;
@@ -244,8 +269,9 @@
         width: 90%;
         height: 90%;
     }
-    @media screen  and (max-width:1200px){
+
+    @media screen and (max-width:1200px) {
         margin: 2rem 0;
-        
+
     }
 }
