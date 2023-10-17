@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import {images} from '../../Constants'
 
 import { motion } from "framer-motion";
 import "./About.scss";
@@ -8,22 +9,22 @@ const abouts = [
   {
     title: "Full Stack Web Development",
     description: "Building from Pixels to Databases, We Do It All",
-    imgUrl: " ",
+    imgUrl:images.about01,
   },
   {
     title: "Front-End Development",
     description: "Front-End Magic: Turning Designs into Reality",
-    imgUrl: " ",
+    imgUrl: images.about02,
   },
   {
     title: "Back-End Development",
     description: "Reliability, Scalability, Security: Our Back-End Promise",
-    imgUrl: " ",
+    imgUrl: images.about03,
   },
   {
     title: "DataBase",
     description: "Empowering Business Decisions with Data Management",
-    imgUrl: " ",
+    imgUrl:images.about04,
   },
 ];
 

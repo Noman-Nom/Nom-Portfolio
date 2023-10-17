@@ -18,10 +18,14 @@ import sass from '../Assets/sass.png';
 import typescript from '../Assets/typescript.png';
 import vue from '../Assets/vue.png';
 
-import about01 from '../Assets/about01.png';
-import about02 from '../Assets/about02.png';
-import about03 from '../Assets/about03.png';
-import about04 from '../Assets/about04.png';
+import about01 from '../Assets/about01.jpg';
+import about02 from '../Assets/about02.jpg';
+import about03 from '../Assets/about03.jpg';
+import about04 from '../Assets/about04.jpg';
+import about05 from '../Assets/about05.jpg';
+import about06 from '../Assets/about06.jpg';
+import about07 from '../Assets/about07.jpeg';
+import about08 from '../Assets/about08.jpeg';
 
 import profile from '../Assets/profile.png';
 import circle from '../Assets/circle.svg';
@@ -70,6 +74,10 @@ export default {
   about02,
   about03,
   about04,
+  about05,
+  about06,
+  about07,
+  about08,
   profile,
   circle,
   logo,
