@@ -43,6 +43,7 @@ import jslogo from '../Assets/jslogo.png';
 import tailwindcss from '../Assets/tailwindcss.png';
 import nextjs from '../Assets/nextjs.png';
 import firebase from '../Assets/firebase.png';
+import mongodb from '../Assets/mongodb.png';
 
 
 export default {
@@ -88,4 +89,6 @@ export default {
   tailwindcss,
   nextjs,
   firebase,
+  mongodb,
+  
 };

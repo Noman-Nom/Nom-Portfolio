@@ -184,6 +184,12 @@
             margin-top: 2rem;
             margin-left: 1rem;
         }
+        div:nth-child(6) {
+            width: 75px;
+            height: 75px;
+            margin-top: 1rem;
+            margin-left: -1rem;
+        }
 
         @media screen and (min-width:2000px) {
             div:nth-child(1) {
@@ -209,6 +215,18 @@
                 margin-top: 2rem;
                 margin-left: 2rem;
             }
+            div:nth-child(5) {
+                width: 250px;
+                height: 250px;
+                margin-top: 2rem;
+                margin-left: 1rem;
+            }
+            div:nth-child(6) {
+                width: 220px;
+                height: 220px;
+                margin-top: 1rem;
+                margin-left: -1rem;
+            }
         }
 
         @media screen and (max-width:1200px) {
@@ -223,6 +241,7 @@
             flex-wrap: wrap;
 
             margin-top: 0;
+            
             .circle-cmp {
                 width: 60px;
                 height: 60px;
@@ -236,7 +255,6 @@
                     height: 60%;
                 }
             }
-
         }
 
 
