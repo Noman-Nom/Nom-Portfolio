@@ -6,12 +6,12 @@ import "./About.scss";
 
 const abouts = [
   {
-    title: "Web Development",
-    description: "I'm a Full Stack Web Developer",
+    title: "Full Stack Web Development",
+    description: "Building from Pixels to Databases, We Do It All",
     imgUrl: " ",
   },
   {
-    title: "Front-End",
+    title: "Front-End Development",
     description: "Front-End Magic: Turning Designs into Reality",
     imgUrl: " ",
   },
@@ -36,6 +36,28 @@ const About = () => {
         <br />
         Meets Great <span>Business Outcomes</span>"
       </h2>
+
+      <div className="app__profiles">
+      {
+        abouts.map((about,index)=>(
+          <motion.div
+          whileInView={{opacity:1}}
+
+          whileHover={{scale:1.1}}
+          transition={{duration:.5 , type:'tween'}}
+          className="app__profile-item"
+          key={about.title + index}
+          >
+                <img src={about.imgUrl} alt={about.title} />
+                <h2 className="bold-text" style={{marginTop:20}}>{about.title}</h2>
+                <p className="p-text" style={{marginTop:10}}>{about.description}</p>
+                 
+          </motion.div>
+        ))
+      }
+
+      </div>
+
     </>
   );
 };
