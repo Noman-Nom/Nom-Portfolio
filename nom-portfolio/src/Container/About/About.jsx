@@ -9,22 +9,22 @@ const abouts = [
   {
     title: "Full Stack Web Development",
     description: "Building from Pixels to Databases, We Do It All",
-    imgUrl:images.about01,
+    imgUrl:images.about07,
   },
   {
     title: "Front-End Development",
     description: "Front-End Magic: Turning Designs into Reality",
-    imgUrl: images.about02,
+    imgUrl: images.about01,
   },
   {
     title: "Back-End Development",
     description: "Reliability, Scalability, Security: Our Back-End Promise",
-    imgUrl: images.about03,
+    imgUrl: images.about08,
   },
   {
     title: "DataBase",
     description: "Empowering Business Decisions with Data Management",
-    imgUrl:images.about04,
+    imgUrl:images.about05,
   },
 ];
 
