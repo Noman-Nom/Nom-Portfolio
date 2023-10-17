@@ -9,7 +9,7 @@ import './Work.scss'
 
 const Work = () => {
 
-  const [active, setActive] = useState(second)
+  const [activeFilter, setActiveFilter] = useState('All')
   const handleWorkFilter =(item)=>{
 
   }
@@ -24,7 +24,7 @@ const Work = () => {
         onClick={()=> handleWorkFilter(item)}
         className={`app__work-filter-item app__flex p-text ${activeFilter === item ? 'item-active' : ''}`}
         >
-
+            {item}
         </div>
 
       ))}
