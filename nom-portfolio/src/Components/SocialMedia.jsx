@@ -5,7 +5,28 @@ import {AiFillGithub , AiFillFacebook, AiFillLinkedin,AiFillTwitterCircle, AiOut
 
 const SocialMedia = () => {
   return (
-    <div>SocialMedia</div>
+    <div className='app__social'>
+            <div>
+           <AiFillLinkedin/>
+           
+            </div>
+            <div>
+           <AiFillGithub/>
+
+            </div>
+            <div>
+           <AiFillFacebook/>
+
+            </div>
+            <div>
+           <AiFillTwitterCircle/>
+
+            </div>
+            <div>
+           <AiOutlineInstagram/>
+
+            </div>
+    </div>
   )
 }
 
