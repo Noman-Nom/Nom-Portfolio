@@ -1,11 +1,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { images } from "../../Constants";
+
+
 
 
 import {urlFor,Client} from '../../Client'
 import { motion } from "framer-motion";
 import "./About.scss";
+import { AppWrap } from "../../Wrapper";
 
 
 // const abouts = [
@@ -74,4 +76,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrap(About, 'about');

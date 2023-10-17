@@ -188,17 +188,19 @@
             width: 75px;
             height: 75px;
             margin-top: 0rem;
-            margin-left: -7rem;
+            margin-left: -5rem;
         }
 
         @media screen and (min-width:2000px) {
             div:nth-child(1) {
+                margin-left: -7rem;
                 width: 200px;
                 height: 200px;
             }
 
             div:nth-child(2) {
-                margin: 1.75rem;
+                margin-left: -2rem;
+            margin-top: 0rem;
                 width: 250px;
                 height: 250px;
             }
@@ -206,26 +208,27 @@
             div:nth-child(3) {
                 width: 200px;
                 height: 200px;
-                margin-left: 3rem;
+                margin-top: 1rem;
+                margin-left: 1rem;
             }
 
             div:nth-child(4) {
                 width: 220px;
                 height: 220px;
                 margin-top: 2rem;
-                margin-left: 2rem;
+                margin-left: 1rem;
             }
             div:nth-child(5) {
                 width: 250px;
                 height: 250px;
-                margin-top: 2rem;
-                margin-left: 1rem;
+                margin-top: 1rem;
+                margin-left: -2rem;
             }
             div:nth-child(6) {
                 width: 220px;
                 height: 220px;
-                margin-top: 1rem;
-                margin-left: -1rem;
+                margin-top: 0rem;
+                margin-left: -5rem;
             }
         }
 
