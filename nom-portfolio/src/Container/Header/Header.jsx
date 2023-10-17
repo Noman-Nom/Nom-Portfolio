@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { images } from "../../Constants";
+import { AppWrap } from "../../Wrapper";
 import "./Header.scss";
 
 const scaleVarients ={
