@@ -29,7 +29,20 @@ const Work = () => {
       );
   }, []);
   const handleWorkFilter = (item) => {
-    setActiveFilter();
+    setActiveFilter(item);
+
+    setAnimateCard([{y:100 , opacity:0}])
+
+    setTimeout(()=>{
+      setAnimateCard([{y:0 , opacity:1}])
+
+      if(item=== 'ALL'){
+        setFilterWork(work)
+
+      }else{
+        setFilterWork(work.filter((work)=>work.tags.includes(item)))
+      }
+    },500)
   };
   return (
     <>
