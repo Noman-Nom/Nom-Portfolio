@@ -51,6 +51,25 @@
         border-radius: 0.5rem;
         background-color: #fff;
         color: black;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+
+        &:hover{
+            box-shadow: rgba(14, 190, 233, 0.8) 0px 3px 6px, rgb(93, 135, 255, 0.8) 0px 3px 6px;
+        }
+        @media screen and (min-width:2000px){
+            width: 470px;
+            padding: 1.25rem;
+            border-radius: 0.75rem;
+
+
+        }
+        @media screen and (min-width:2000px){
+       width: 100%;
+       margin: 1rem;
+
+
+        }
     }
 }
 
@@ -64,5 +83,10 @@
         height: 100%;
         border-radius: 20px;
         object-fit: cover;
+    }
+
+    @media screen  and (min-width:2000px){
+        
+        height: 350px;
     }
 }
