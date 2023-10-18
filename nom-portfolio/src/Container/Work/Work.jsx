@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { AppWrap } from "../../Wrapper";
 import { urlFor, Client } from "../../Client";
 
+
 import {AiFillEye, AiFillGithub} from 'react-icons/ai'
 
 import "./Work.scss";
@@ -107,7 +108,7 @@ const Work = () => {
               <p className="p-text" style={{marginTop:10}}>{work.description} </p>
 
               <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tag[0]}</p>
+                <p className="p-text">{work.tags[0]}</p>
               </div>
             </div>
 
@@ -118,4 +119,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default AppWrap(Work, 'work');
