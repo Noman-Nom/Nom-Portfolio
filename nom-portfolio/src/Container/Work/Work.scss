@@ -21,9 +21,19 @@
         cursor: pointer;
         transition: all .5s ease-in-out;
         margin: 0.6rem;
+        box-shadow: rgba(14, 190, 233, 0.8) 0px 3px 6px, rgb(93, 135, 255, 0.8) 0px 3px 6px;
 
         &:hover{
             background-color: var(--myfvt-color);
         }
+        @media screen and (min-width:2000px) {
+            padding: 1rem 2rem;
+            border-radius: 0.85rem;
+            
+        }
+    }
+
+    .item-active{
+        background-color: var(--myfvt-color);
     }
 }

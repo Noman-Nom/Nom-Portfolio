@@ -11,7 +11,7 @@ import {AiFillEye, AiFillGithub} from 'react-icons/ai'
 import "./Work.scss";
 
 const Work = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("ALL");
 
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [work, setWork] = useState([]);
@@ -29,7 +29,10 @@ const Work = () => {
         console.error("Error fetching data from Sanity:", error)
       );
   }, []);
-  const handleWorkFilter = (item) => {};
+  const handleWorkFilter = (item) => {
+
+    setActiveFilter();
+  };
   return (
     <>
       <h2 className="head-text">
@@ -44,7 +47,7 @@ const Work = () => {
               key={index}
               onClick={() => handleWorkFilter(item)}
               className={`app__work-filter-item app__flex p-text ${
-                activeFilter === item ? "item-active" : ""
+                activeFilter === item ? "item-active" : " "
               }`}
             >
               {item}
