@@ -129,3 +129,17 @@
 
 
 }
+
+.app__work-content{
+    padding: 0.5rem;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+
+    h4{
+        margin-top: 1rem;
+        line-height: 1.5;
+        
+
+    }
+}
