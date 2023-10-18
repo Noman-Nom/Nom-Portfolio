@@ -53,9 +53,10 @@
         color: black;
         cursor: pointer;
         transition: all .5s ease-in-out;
+        box-shadow: rgba(14, 190, 233, 0.8) 0px 3px 6px, rgb(93, 135, 255, 0.8) 0px 3px 6px;
 
         &:hover{
-            box-shadow: rgba(14, 190, 233, 0.8) 0px 3px 6px, rgb(93, 135, 255, 0.8) 0px 3px 6px;
+            box-shadow: rgba(124, 123, 240, 0.8) 0px 3px 6px, rgb(93, 135, 255, 0.8) 0px 3px 6px;
         }
         @media screen and (min-width:2000px){
             width: 470px;
@@ -139,7 +140,14 @@
     h4{
         margin-top: 1rem;
         line-height: 1.5;
-        
 
+
+    }
+    .app__work-tag{
+        position: absolute;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        background-color: #fff;
+        top: -25px;
     }
 }
