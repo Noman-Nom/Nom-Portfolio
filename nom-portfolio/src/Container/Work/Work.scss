@@ -37,3 +37,32 @@
         background-color: var(--myfvt-color);
     }
 }
+
+.app__work-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .app__work-item {
+        width: 270px;
+        flex-direction: column;
+        margin: 2rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: #fff;
+        color: black;
+    }
+}
+
+.app__work-img{
+    width: 100%;
+    height: 230px;
+    position: relative;
+
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+}

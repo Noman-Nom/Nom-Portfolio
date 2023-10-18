@@ -5,8 +5,7 @@ import { motion } from "framer-motion";
 import { AppWrap } from "../../Wrapper";
 import { urlFor, Client } from "../../Client";
 
-
-import {AiFillEye, AiFillGithub} from 'react-icons/ai'
+import { AiFillEye, AiFillGithub } from "react-icons/ai";
 
 import "./Work.scss";
 
@@ -30,7 +29,6 @@ const Work = () => {
       );
   }, []);
   const handleWorkFilter = (item) => {
-
     setActiveFilter();
   };
   return (
@@ -86,7 +84,7 @@ const Work = () => {
                     }}
                     className="app__flex"
                   >
-                    <AiFillEye/>
+                    <AiFillEye />
                   </motion.div>
                 </a>
                 <a href={work.codeLink} target="_blank" rel="noreferrer">
@@ -100,21 +98,23 @@ const Work = () => {
                     }}
                     className="app__flex"
                   >
-                <AiFillGithub/>
+                    <AiFillGithub />
                   </motion.div>
                 </a>
               </motion.div>
             </div>
-            <div className="app__work-content app__flex">
 
+            
+            <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
-              <p className="p-text" style={{marginTop:10}}>{work.description} </p>
+              <p className="p-text" style={{ marginTop: 10 }}>
+                {work.description}{" "}
+              </p>
 
               <div className="app__work-tag app__flex">
                 <p className="p-text">{work.tags[0]}</p>
               </div>
             </div>
-
           </div>
         ))}
       </motion.div>
@@ -122,4 +122,4 @@ const Work = () => {
   );
 };
 
-export default AppWrap(Work, 'work');
+export default AppWrap(Work, "work");
