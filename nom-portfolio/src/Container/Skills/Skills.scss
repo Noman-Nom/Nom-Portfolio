@@ -45,4 +45,16 @@
     margin: 1rem;
     transition:  all .3s ease-in-out;
 
+    div{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color:#fff;
+
+        img{
+            width: 50%;
+            height: 50%;
+        }
+    }
+
 }
