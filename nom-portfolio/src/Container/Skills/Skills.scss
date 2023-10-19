@@ -87,27 +87,18 @@
     }
 }
 
- //   <>
-            //   <motion.div
-            //    whileInView={{opacity:[0,1]}}
-            //    transition={{duration:0.5}}
-            //    className='app__skills-exp-work'
 
-             
-            //    data-for={work.name}
-     
-            //    key={work.name}
-            //   >
-            //       <h4 className='bold-text'>{work.name}</h4>
-            //       <p className='p-text'>{work.company}</p>
-            //   </motion.div>
+.app__skills-exp{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
 
-            //   <ReactTooltip
-            // effect = "solid"
-            // id={work.name}
-            // arrowColor='#fff'
-            // className='skills-tooltip'
-            //   >
-            //       {work.desc}
-            //   </ReactTooltip>
-            //   </>
+@media screen and (max-width:900px) {
+    margin-top: 2rem;
+    
+}
+
+   
+}
