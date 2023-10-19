@@ -72,5 +72,17 @@
             
         }
     }
+    p{
+        font-weight: 600;
+        margin-top: 0.5rem;
+    }
 
+    @media screen and (min-width:2000px) {
+        margin: 1rem 2rem;
+
+        p{
+            margin-top: 1rem;
+        }
+        
+    }
 }
