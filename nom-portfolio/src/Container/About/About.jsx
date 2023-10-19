@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import {urlFor,Client} from '../../Client'
 import { motion } from "framer-motion";
 import "./About.scss";
-import { AppWrap } from "../../Wrapper";
+import { AppWrap, MotionWrap } from "../../Wrapper";
 
 
 // const abouts = [
