@@ -18,6 +18,8 @@ const Skills = () => {
 
     Client.fetch(query)
       .then((data) => {
+
+        console.log(data)
         setExperiences(data);
        
       })
@@ -58,34 +60,21 @@ const Skills = () => {
       </motion.div>
 
       <motion.div className='app__skills-exp' >
+
+       
           {
-            experiences.map((work)=>{
-              <>
-              <motion.div
-               whileInView={{opacity:[0,1]}}
-               transition={{duration:0.5}}
-               className='app__skills-exp-work'
+            experiences?.map((experience)=>(
+            <motion.div
+            className='app__skills-exp-item'
+            key={experience.year}
+            >
+                  {/* {console.log("jasj",experience.year)} */}
+                <div className='app__skills-exp-year'>
+                    <p className='bold-text'>{experience.year}</p>
+                </div>
 
-             
-               data-for={work.name}
-     
-               key={work.name}
-              >
-                  <h4 className='bold-text'>{work.name}</h4>
-                  <p className='p-text'>{work.company}</p>
-              </motion.div>
-
-              <ReactTooltip
-            effect = "solid"
-            id={work.name}
-            arrowColor='#fff'
-            className='skills-tooltip'
-              >
-
-              </ReactTooltip>
-              </>
-            })
-          }
+            </motion.div>
+            )) }
       </motion.div>
 
     </div>
