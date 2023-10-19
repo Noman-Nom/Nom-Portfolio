@@ -1,4 +1,4 @@
-import { Tooltip as ReactTooltip } from "react-tooltip";
+
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { AppWrap } from "../../Wrapper";
@@ -61,35 +61,25 @@ const Skills = () => {
               </div>
 
               <motion.div className="app__skills-exp-works">
-                
-                {experience.works.map((work)=>(
-                       <>
-              <motion.div
-               whileInView={{opacity:[0,1]}}
-               transition={{duration:0.5}}
-               className='app__skills-exp-work'
-
-             
-               data-for={work.name}
-     
-               key={work.name}
-              >
-                  <h4 className='bold-text'>{work.name}</h4>
-                  <p className='p-text'>{work.company}</p>
-              </motion.div>
-
-              <ReactTooltip
-            effect = "solid"
-            id={work.name}
-            arrowColor='#fff'
-            className='skills-tooltip'
-              >
-                  {work.desc}
-              </ReactTooltip>
-              </>
+                {experience.works.map((work) => (
+                  <>
+                    <motion.div
+                      whileInView={{ opacity: [0, 1] }}
+                      transition={{ duration: 0.5 }}
+                      className="app__skills-exp-work"
+                    
+                      key={work.name}
+                    >
+                      <h4 className="bold-text">{work.name}</h4>
+                      <p className="p-text bold-text">{work.company}
+                      </p>
+                      <p className="p-text p-other " >{work.desc}</p>
+                    </motion.div>
+                    {/* {console.log('here', work.desc)} */}
+                    
+                  </>
                 ))}
-                
-                </motion.div>
+              </motion.div>
             </motion.div>
           ))}
         </motion.div>
