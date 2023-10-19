@@ -9,9 +9,9 @@ import { urlFor, Client } from "../../Client";
 const Testimonials = () => {
 
   const [brands, setBrands] = useState([])
-  const [testimonails, setTestimonails] = useState([])
+  const [testimonials, setTestimonials] = useState([])
 
-  const [currentIndex, setCurrentIndex] = useState([])
+  const [currentIndex, setCurrentIndex] = useState(0)
 
 
   useEffect(() => {
@@ -19,8 +19,8 @@ const Testimonials = () => {
     const skillsQuery = '*[_type == "brands"]';
 
     Client.fetch(query).then((data) => {
-      // console.log(data);
-      setTestimonails(data);
+      console.log(data);
+      setTestimonials(data);
     });
     Client.fetch(skillsQuery)
       .then((data) => {
@@ -32,13 +32,22 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div>Testimonials</div>
+        <>
+        {testimonials.length &&(
+          <>
+          <div className="app__testimonials-item app__flex">
+        
+          <img src={urlFor(testimonials[currentIndex].imageurl)}  />
+          </div>
+          </>
+        )}
+        </>
   )
 }
 
 export default AppWrap(
-  MotionWrap(Testimonials, 'app__testimonials'),
-   'skill',
+  MotionWrap(Testimonials, 'app__testimonial'),
+   'testimonial',
    "app__primarybg"
 
    );
