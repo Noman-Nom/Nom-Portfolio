@@ -50,10 +50,26 @@
         height: 90px;
         border-radius: 50%;
         background-color:#fff;
+        transition: all .5s ease-in-out;
+        cursor: pointer;
 
         img{
             width: 50%;
             height: 50%;
+        }
+
+        &:hover{
+            box-shadow: rgba(14, 190, 233, 0.8) 0px 3px 6px, rgb(93, 135, 255, 0.8) 0px 3px 6px;
+        }
+        @media screen and (min-width:2000px) {
+            height: 150px;
+            width: 150px;
+            
+        }
+        @media screen and (max-width:450px) {
+            height: 70px;
+            width: 70px;
+            
         }
     }
 
