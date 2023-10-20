@@ -65,6 +65,22 @@ const Testimonials = () => {
               <BsFillArrowRightCircleFill/>
             </div>
           </div>
+
+          <div className="app__testimonials-brands">
+            {
+              brands.map((brand)=>(
+
+                <motion.div 
+                whileInView={{opacity:[0,1]}}
+                transition={{duration:0.5, type: 'tween'}}
+
+                key={brand._id}
+                >
+                      <img src={urlFor(brand.imgUrl)} alt={brand.name} />
+                </motion.div>
+              ))
+            }
+          </div>
           </>
         )}
         </>
