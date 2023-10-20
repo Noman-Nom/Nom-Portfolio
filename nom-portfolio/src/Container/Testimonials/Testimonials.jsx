@@ -14,6 +14,10 @@ const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
 
+  const handleClick=(index)=>{
+        setCurrentIndex(index)
+  }
+
   useEffect(() => {
     const query = '*[_type == "testimonials"]';
     const skillsQuery = '*[_type == "brands"]';
@@ -42,7 +46,24 @@ const Testimonials = () => {
 
           <div className="app__testimonials-content">
             <p className="p-text">{test.feedback}</p>
+            <div>
+              <h4 className="bold-text">
+                {test.name}
+              </h4>
+              <h5 className='p-text'>{test.company}</h5>
+            </div>
           </div>
+          </div>
+
+          <div className="app__testimonials app__flex">
+            <div className="app__flex" onClick={()=>handleClick(currentIndex===0 ? testimonials.length -1: currentIndex-1)}>
+
+              <BsFillArrowLeftCircleFill/>
+            </div>
+            <div className="app__flex" onClick={()=>handleClick(currentIndex===testimonials.length-1 ? 0: currentIndex+1)}>
+
+              <BsFillArrowRightCircleFill/>
+            </div>
           </div>
           </>
         )}
