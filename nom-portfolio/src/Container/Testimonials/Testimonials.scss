@@ -39,6 +39,19 @@
     }
 }
 
+.app__testimonials-content{
+    flex: 1;
+    height: 100%;
+
+    padding: 0 2rem;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
 .app__testimonials-brands {
 
     width: 80%;
