@@ -2,7 +2,7 @@ import React from 'react'
 import  './Testimonials.scss'
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import {BsFillArrowLeftCircleFill , BsFillArrowRightCircleFill} from 'react-icons/bs'
+import {AiFillCaretLeft , AiFillCaretRight} from 'react-icons/ai'
 import { AppWrap, MotionWrap } from "../../Wrapper";
 import { urlFor, Client } from "../../Client";
 
@@ -58,11 +58,11 @@ const Testimonials = () => {
           <div className="app__testimonials-btns app__flex">
             <div className="app__flex" onClick={()=>handleClick(currentIndex===0 ? testimonials.length -1: currentIndex-1)}>
 
-              <BsFillArrowLeftCircleFill/>
+              <AiFillCaretLeft/>
             </div>
             <div className="app__flex" onClick={()=>handleClick(currentIndex===testimonials.length-1 ? 0: currentIndex+1)}>
 
-              <BsFillArrowRightCircleFill/>
+              <AiFillCaretRight/>
             </div>
           </div>
 
