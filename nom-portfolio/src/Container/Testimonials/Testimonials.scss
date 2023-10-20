@@ -1,3 +1,17 @@
+.app__testimonial{
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.app__testimonials-item{
+    width: 60%;
+    min-height: 320px;
+    background-color: var(--white-color);
+    display: flex;
+    padding: 2rem;
+    border-radius: 15px;
+}
 .app__testimonials-brands{
 
     width: 80%;

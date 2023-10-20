@@ -66,7 +66,7 @@ const Testimonials = () => {
             </div>
           </div>
 
-          <div className="app__testimonials-brands">
+          <div className="app__testimonials-brands app__flex">
             {
               brands.map((brand)=>(
 
