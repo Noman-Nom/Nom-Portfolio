@@ -60,4 +60,8 @@
 }
 .app__footer-cards .app__footer-card:last-child{
     background-color: #d9eefe;
+    &:hover{
+
+        box-shadow: #ffa0a9 0px 3px 6px, rgb(93, 135, 255, 0.8) 0px 3px 6px;
+    }
 }
