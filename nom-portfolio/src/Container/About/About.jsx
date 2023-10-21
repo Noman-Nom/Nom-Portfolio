@@ -12,6 +12,8 @@ import { AppWrap, MotionWrap } from "../../Wrapper";
 
 // const abouts = [
 //   {
+
+        // id:2 
 //     title: "Full Stack Web Development",
 //     description: "Building from Pixels to Databases, We Do It All",
 //     imgUrl: images.about07,
@@ -61,6 +63,7 @@ const About = () => {
             transition={{ duration: 0.5, type: "tween" }}
             className="app__profile-item"
             key={about.title + index}
+          
           >
             <img src={ urlFor(about.imgUrl)} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>

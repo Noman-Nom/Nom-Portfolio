@@ -1,10 +1,10 @@
 import React from "react";
-import { useState, useContext } from "react";
+import { useState,  } from "react";
 
 import { BsFillMenuButtonWideFill } from "react-icons/bs";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { motion } from "framer-motion";
- import {MdDarkMode , MdOutlineLightMode} from 'react-icons/md'
+
 
 
  
@@ -30,9 +30,7 @@ const Navbar = () => {
         ))}
 
       </ul>
-            <div>
-              <MdDarkMode/>
-            </div>
+           
 
 
       <div className="app__navbar-menu">
