@@ -63,7 +63,7 @@ const Header = () => {
       >
 
         {
-          [images.tailwindcss,images.javascript, images.reacticon,images.nextjs,images.firebase,images.mongodb].map((circle,index)=>(
+          [images.mySql,images.javascript, images.reacticon,images.nextjs,images.firebase,images.mongodb].map((circle,index)=>(
             <div className="circle-cmp app__flex" key={`circle-${index}`} >
                   <img src={circle} alt="circle" />
             </div>

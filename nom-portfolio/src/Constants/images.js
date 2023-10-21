@@ -48,6 +48,7 @@ import tailwindcss from '../Assets/tailwindcss.png';
 import nextjs from '../Assets/nextjs.png';
 import firebase from '../Assets/firebase.png';
 import mongodb from '../Assets/mongodb.png';
+import mySql from '../Assets/mySql.png';
 
 
 export default {
@@ -98,5 +99,6 @@ export default {
   nextjs,
   firebase,
   mongodb,
+  mySql,
   
 };
