@@ -4,7 +4,13 @@ import { React, useState } from "react";
 import { AppWrap, MotionWrap } from "../../Wrapper";
 
 import "./Footer.scss";
+
 const Footer = () => {
+
+  const [formData, setFormData] = useState({name:'',email:'', message:''})
+
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
   return (
     <>
       <h2 className="head-text">Contact With Me</h2>
