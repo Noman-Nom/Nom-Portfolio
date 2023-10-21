@@ -24,8 +24,9 @@
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #fef4f5;
+    background-color: #f8d9dc;
     transition: all .3s ease-in-out;
+
 
     img{
         width:40px;
@@ -40,12 +41,13 @@
     a{
         text-decoration: none;
         font-weight: 600;
+     
     }
+&:hover{
 
-    &:hover{
-        box-shadow: rgba(14, 190, 233, 0.8) 0px 3px 6px, rgb(93, 135, 255, 0.8) 0px 3px 6px;
-        
-    }
+    box-shadow: rgba(14, 190, 233, 0.8) 0px 3px 6px, rgb(93, 135, 255, 0.8) 0px 3px 6px;
+}
+   
     @media screen and (max-width:450px) {
         width: 100%;
     }
@@ -55,4 +57,7 @@
     width: 100%;
 }
 
+}
+.app__footer-cards .app__footer-card:last-child{
+    background-color: #d9eefe;
 }
