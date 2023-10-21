@@ -132,6 +132,7 @@
         height: 100%;
         margin-left: 1rem;
         margin-top: 3rem;
+     
 
         div {
             width: 100px;
@@ -140,6 +141,7 @@
             background: var(--white-color);
             box-shadow: rgba(14, 190, 233, 0.8) 0px 3px 6px, rgb(93, 135, 255, 0.8) 0px 3px 6px;
             cursor: pointer;
+            gap: 2rem;
 
             img {
                 width: 60%;
@@ -149,46 +151,51 @@
         }
 
         div:nth-child(1) {
-            width: 60px;
-            margin-left: -7rem;
           
+           
+            width: 70px;
+            height: 70px;
+            margin-left: -6rem;
+            // margin-top: -1.5rem;
 
-            height: 60px;
+
         }
 
         div:nth-child(2) {
-            margin-left: -2rem;
-            margin-top: 0rem;
-            width: 90px;
-            height: 90px;
+            margin-left: -0.7rem;
+            // margin-top: -1.5rem;
+            width: 70px;
+            height: 70px;
         }
 
         div:nth-child(3) {
             width: 70px;
             height: 70px;
-            margin-top: 1rem;
-            margin-left: 1rem;
+         margin-left: 1.3rem;
+        //     margin-top: -1rem;
 
         }
 
         div:nth-child(4) {
             width: 70px;
             height: 70px;
-            margin-top: 2rem;
-            margin-left: 1rem;
+            // margin-top: 0rem;
+            margin-left: 1.3rem;
         }
 
         div:nth-child(5) {
-            width: 90px;
-            height: 90px;
-            margin-top: 1rem;
-            margin-left: -2rem;
+            width: 70px;
+            height: 70px;
+            // margin-top: -1rem;
+            margin-left: -1rem;
         }
         div:nth-child(6) {
-            width: 75px;
-            height: 75px;
-            margin-top: 0rem;
-            margin-left: -5rem;
+            width: 70px;
+            height: 70px;
+            margin-left: -6rem;
+            margin-bottom: 2rem;
+          
+          
         }
 
         @media screen and (min-width:2000px) {
@@ -269,6 +276,7 @@
                 width: 70px;
                 height: 70px;
                 margin-left: 0rem;
+                margin-top: 0;
             }
     
             div:nth-child(2) {
@@ -304,6 +312,7 @@
                 height: 70px;
                 margin-top:0rem;
                 margin-left: 0rem;
+                margin-bottom: 0rem;
             }
         }
 
