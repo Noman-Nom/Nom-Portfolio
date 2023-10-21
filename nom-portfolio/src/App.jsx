@@ -6,8 +6,11 @@ import {Navbar} from './Components'
 
 
 
+
 const App = () => {
 
+  
+ 
  
   return (
     <div className='app'>
