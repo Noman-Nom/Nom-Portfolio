@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
  
 import { images } from "../../Constants";
 
+
 import "./Navbar.scss";
 
 const Navbar = () => {

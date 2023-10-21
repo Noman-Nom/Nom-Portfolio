@@ -50,6 +50,8 @@ import firebase from '../Assets/firebase.png';
 import mongodb from '../Assets/mongodb.png';
 import mySql from '../Assets/mySql.png';
 
+import nomi from '../Assets/nomi.png'
+
 
 export default {
   email,
@@ -100,5 +102,6 @@ export default {
   firebase,
   mongodb,
   mySql,
+  nomi,
   
 };
