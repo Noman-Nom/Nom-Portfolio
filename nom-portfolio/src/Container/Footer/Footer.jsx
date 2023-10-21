@@ -26,9 +26,20 @@ const Footer = () => {
 
     const contact = {
       _type : 'contact',
-      name: formData.name,
-      
+      name: name,
+      email:email,
+      message:message,
+
+
     }
+
+    //  for uploading data to sanity
+    Client.create(contact)
+    .then(()=>{
+      setLoading(false);
+      setIsFormSubmitted(true);
+
+    })
   }
   return (
     <>
