@@ -1,15 +1,19 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
 
 import { BsFillMenuButtonWideFill } from "react-icons/bs";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { motion } from "framer-motion";
+ import {MdDarkMode , MdOutlineLightMode} from 'react-icons/md'
 
+
+ 
 import { images } from "../../Constants";
 
 import "./Navbar.scss";
 
 const Navbar = () => {
+
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="app__navbar">
@@ -24,7 +28,11 @@ const Navbar = () => {
            
           </li>
         ))}
+
       </ul>
+            <div>
+              <MdDarkMode/>
+            </div>
 
 
       <div className="app__navbar-menu">
